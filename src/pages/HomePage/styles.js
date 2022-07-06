@@ -5,9 +5,9 @@ export const Container = styled.div`
   flex-direction: column;
   max-height: 100%;
   overflow-y: auto;
-  scrollbar-width: none; /** Firefox */
+  scrollbar-width: none;
   ::-webkit-scrollbar {
     display: none;
   }
-  height: 100vh;
+  //height: 100vh;
 `;

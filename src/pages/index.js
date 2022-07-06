@@ -1,6 +1,8 @@
-import Layout from "./Layout";
+import HomePage from "./HomePage";
+import Layout from "../components/Layout";
+import Main from "../components/Main";
 
 function Index() {
-  return <Layout>Balierion</Layout>;
+  return <HomePage />;
 }
 export default Index;

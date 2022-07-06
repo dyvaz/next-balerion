@@ -21,7 +21,7 @@ html, body, #root{
 }
 html{
   //background: gray;
-   background: ${(props) => props.theme.colors.primary};;
+   background: ${(props) => props.theme.colors.primary};
 }
 `;
 

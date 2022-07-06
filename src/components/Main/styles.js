@@ -3,12 +3,12 @@ import { Home, Search, Notifications, Person } from "../../styles/Icons";
 import { Pencil } from "@styled-icons/octicons/Pencil";
 
 export const Container = styled.div`
-  height: 100vh;
+  // height: 100vh;
   flex-direction: column;
   width: min(700px, 100%);
   @media (min-width: 500px) {
-    border-left: 1px solid ${(props) => props.theme.colors.outiline};
-    border-right: 1px solid ${(props) => props.theme.colors.outiline};
+    border-left: 1px solid ${(props) => props.theme.colors.outline};
+    border-right: 1px solid ${(props) => props.theme.colors.outline};
   }
 `;
 
@@ -40,7 +40,7 @@ export const BottomMenu = styled.div`
 
   background: ${(props) => props.theme.colors.primary};
   width: 100%;
-  border-top: 1px solid ${(props) => props.theme.colors.outiline};
+  border-top: 1px solid ${(props) => props.theme.colors.outline};
   display: flex;
   justify-content: space-between;
   padding: 15px 0 15px 0;

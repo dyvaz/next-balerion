@@ -1,36 +1,41 @@
 import React from "react";
+
 // import Feed from "../Feed";
 // import { Tab } from "../Feed/styles";
+// import Header from "../Header";
+// import { ProfileInfo } from "../Header/styles";
 
+import { LargeButton } from "../../components/Button/styles";
+import Main from "../../components/Main";
+import Feed from "../../components/Feed";
 import { Container, Banner, Avatar, ProfileData, Followage } from "./styles";
 
-// import { ProfileInfo } from "../Header/styles";
-import { LargeButton } from "../Button/styles";
-import Header from "../Header";
-
-export const ProfilePage = () => {
+const Profile = () => {
   return (
-    <Container>
-      <Header />
-      <Banner>
-        <Avatar />
-      </Banner>
+    <Main>
+      <Container>
+        <Banner>
+          <Avatar />
+        </Banner>
 
-      <ProfileData>
-        <LargeButton className="edit">Editar perfil</LargeButton>
+        <ProfileData>
+          <LargeButton className="edit">Editar perfil</LargeButton>
 
-        <h1>Dyanna</h1>
-        <h2>@dyvaz</h2>
-        <Followage>
-          <span>
-            <strong>999</strong> seguindo
-          </span>
+          <h1>Dyanna</h1>
+          <h2>@dyvaz</h2>
+          <Followage>
+            <span>
+              <strong>999</strong> seguindo
+            </span>
 
-          <span>
-            <strong>999 </strong> seguidores
-          </span>
-        </Followage>
-      </ProfileData>
-    </Container>
+            <span>
+              <strong>999 </strong> seguidores
+            </span>
+          </Followage>
+        </ProfileData>
+        <Feed />
+      </Container>
+    </Main>
   );
 };
+export default Profile;

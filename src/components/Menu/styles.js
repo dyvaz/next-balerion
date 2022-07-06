@@ -35,6 +35,7 @@ export const Topside = styled.div`
 `;
 
 export const Logo = styled(Dragon)`
+  cursor: pointer;
   margin-top: 10px;
   width: 41px;
   height: 41px;

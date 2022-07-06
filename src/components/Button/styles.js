@@ -1,4 +1,5 @@
 import styled from "styled-components";
+
 export const MenuButton = styled.button`
   //background-color: black;
   display: flex;
@@ -136,7 +137,7 @@ export const LargeButton = styled.button`
     z-index: 2;
     float: rigth;
     margin-left: auto;
-    margin-top: -48px;
+    margin-top: -28px;
     &:hover {
       > span {
         color: ${(props) => props.theme.colors.twitter};
