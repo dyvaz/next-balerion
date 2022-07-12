@@ -37,7 +37,6 @@ export const BottomMenu = styled.div`
   position: sticky;
   bottom: 0;
   left: 0;
-
   background: ${(props) => props.theme.colors.primary};
   width: 100%;
   border-top: 1px solid ${(props) => props.theme.colors.outline};

@@ -35,13 +35,17 @@ export const Title = styled.div`
 `;
 
 export const Input = styled.input`
-  padding: 10px;
+  padding: 10px 10px 10px 25px;
   width: 350px;
   height: 40px;
-  border: none;
+  border: 1px solid ${(props) => props.theme.colors.twitter};
   border-radius: 29.5px;
   margin: 10px;
   background-color: ${(props) => props.theme.colors.twitter};
+  outline: 0;
+  &:focus {
+    border: 1px solid ${(props) => props.theme.colors.twitter_light_hover};
+  }
 `;
 
 export const Button = styled.button`
@@ -60,7 +64,7 @@ export const Button = styled.button`
   &.exit {
     font-size: 14px;
     position: sticky;
-    margin: 210px -50px 0 0;
+    margin: -10px -50px -20px -15px;
     width: 40px;
     height: 40px;
     background-color: ${(props) => props.theme.colors.twitter};
@@ -88,7 +92,7 @@ export const A = styled.div`
 `;
 export const Exit = styled.div`
   cursor: pointer;
-  margin: 10px 500px 0 0;
+  margin: -60px 500px 0 0;
   &:hover {
     background: ${(props) => props.theme.colors.twitter_light_hover};
   }

@@ -1,4 +1,5 @@
 import Router from "next/router";
+import React, { useState } from "react";
 
 import {
   Container,
@@ -16,60 +17,63 @@ import {
 } from "./styles";
 import { MenuButton } from "../Button/styles";
 import ActiveLink from "../ActiveLink";
+import NewPost from "../NewPost";
 
 const MenuBar = () => {
+  const [showModal, setShowModal] = useState(false);
   return (
-    <Container>
-      <Topside>
-        <ActiveLink href={"/"}>
-          <Logo />
-        </ActiveLink>
-        <ActiveLink href={"/"} activeClassName="active">
-          <MenuButton>
-            <HomeIcon />
-            <span className="name">Página Inicial</span>
-          </MenuButton>
-        </ActiveLink>
+    <>
+      <Container>
+        <Topside>
+          <ActiveLink href={"/home"}>
+            <Logo />
+          </ActiveLink>
+          <ActiveLink href={"/home"} activeClassName="active">
+            <MenuButton>
+              <HomeIcon />
+              <span className="name">Página Inicial</span>
+            </MenuButton>
+          </ActiveLink>
 
-        <ActiveLink href={"/SideBar"} activeClassName="active">
-          <MenuButton className="search">
-            <SearchIcon />
-            <span className="name">Buscar</span>
-          </MenuButton>
-        </ActiveLink>
-        <ActiveLink href={"/Notfications"} activeClassName="active">
-          <MenuButton>
-            <BellIcon />
-            <span className="bolinha" data-count=""></span>
-            <span className="name">Notificações</span>
-          </MenuButton>
-        </ActiveLink>
+          <ActiveLink href={"/search"} activeClassName="active">
+            <MenuButton className="search">
+              <SearchIcon />
+              <span className="name">Buscar</span>
+            </MenuButton>
+          </ActiveLink>
+          <ActiveLink href={"/notifications"} activeClassName="active">
+            <MenuButton>
+              <BellIcon />
+              <span className="bolinha" data-count=""></span>
+              <span className="name">Notificações</span>
+            </MenuButton>
+          </ActiveLink>
 
-        <ActiveLink href={"/Profile"} activeClassName="active">
-          <MenuButton>
-            <ProfileIcon />
-            <span className="name">Perfil</span>
-          </MenuButton>
-        </ActiveLink>
+          <ActiveLink href={"/profile"} activeClassName="active">
+            <MenuButton>
+              <ProfileIcon />
+              <span className="name">Perfil</span>
+            </MenuButton>
+          </ActiveLink>
 
-        <ActiveLink href={"/NewPost"} activeClassName="active">
-          <MenuButton className="post">
+          <MenuButton onClick={() => setShowModal(true)} className="post">
             <PostIcon />
             <span className="name">Postar</span>
           </MenuButton>
-        </ActiveLink>
-      </Topside>
+        </Topside>
 
-      <Botside>
-        <Avatar />
-        <ProfileData>
-          <span>@dyvaz</span>
-        </ProfileData>
-        <ActiveLink href={"/Login"}>
-          <ExitIcon />
-        </ActiveLink>
-      </Botside>
-    </Container>
+        <Botside>
+          <Avatar />
+          <ProfileData>
+            <span>@dyvaz</span>
+          </ProfileData>
+          <ActiveLink href={"/login"}>
+            <ExitIcon />
+          </ActiveLink>
+        </Botside>
+      </Container>
+      <NewPost onClose={() => setShowModal(false)} show={showModal}></NewPost>
+    </>
   );
 };
 

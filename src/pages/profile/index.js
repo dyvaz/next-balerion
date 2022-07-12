@@ -8,6 +8,7 @@ import React from "react";
 import { LargeButton } from "../../components/Button/styles";
 import Main from "../../components/Main";
 import Feed from "../../components/Feed";
+import { Tab } from "../../components/Feed/styles";
 import { Container, Banner, Avatar, ProfileData, Followage } from "./styles";
 
 const Profile = () => {
@@ -33,6 +34,7 @@ const Profile = () => {
             </span>
           </Followage>
         </ProfileData>
+        <Tab>Posts</Tab>
         <Feed />
       </Container>
     </Main>

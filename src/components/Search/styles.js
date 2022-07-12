@@ -3,13 +3,17 @@ import styled from "styled-components";
 import { Search } from "../../styles/Icons";
 
 export const Container = styled.div`
-  display: none;
-  @media (min-width: 1067px) {
+    margin: 0 auto;
     display: flex;
     flex-direction: column;
-    width: min(399px, 100%);
+    width: 399px;
+    min-height: 960px;
+  
+  @media (max-width: 500px) {
+    min-height: 900px;
   }
 `;
+
 
 export const SearchWrapper = styled.div`
   padding: 10px 24px;

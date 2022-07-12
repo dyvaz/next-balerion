@@ -1,9 +1,11 @@
 import { Container, Wrapper } from "./styles";
-import SideBar from "../../pages/SideBar";
+import Search from "../Search";
 import Menu from "../Menu";
 import Head from "next/head";
-
+import SideBar from "../SideBar";
+//search
 function Layout({ children }) {
+  const isSearch = children.type.name === "Search";
   return (
     <>
       <Head>
@@ -15,7 +17,7 @@ function Layout({ children }) {
         <Wrapper>
           <Menu />
           {children}
-          <SideBar />
+          <SideBar>{!isSearch && <Search />}</SideBar>
         </Wrapper>
       </Container>
     </>

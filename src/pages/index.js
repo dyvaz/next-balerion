@@ -1,8 +1,8 @@
-import HomePage from "./HomePage";
-import Layout from "../components/Layout";
-import Main from "../components/Main";
+import HomePage from "./home";
+import Login from "../pages/login";
 
 function Index() {
-  return <HomePage />;
+  let isLogado = false;
+  return <>{isLogado ? <HomePage /> : <Login />}</>;
 }
 export default Index;

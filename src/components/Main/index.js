@@ -15,6 +15,7 @@ const Main = ({ children }) => {
   return (
     <Container>
       <div>{children}</div>
+      <div id="modal-root"></div>
       <BottomMenu>
         <Link href={"/"}>
           <HomeIcon />

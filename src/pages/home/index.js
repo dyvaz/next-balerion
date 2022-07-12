@@ -10,6 +10,7 @@ const HomePage = () => {
     <Main>
       <Container>
         <PostBox />
+
         <Feed />
       </Container>
     </Main>

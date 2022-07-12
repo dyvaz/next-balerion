@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { ArrowLeft } from "../../styles/Icons";
 //${(props) => props.theme.colors.search}
 
 export const Container = styled.div`
@@ -16,7 +17,7 @@ export const Container = styled.div`
   }
 `;
 
-export const He = styled.div`
+export const Header = styled.div`
   align-items: center;
   flex-direction: row;
   position: sticky;
@@ -26,16 +27,32 @@ export const He = styled.div`
   h1 {
     padding-top: 10px;
   }
+  a {
+    margin-left: -10px;
+  }
+`;
+export const BackIcon = styled(ArrowLeft)`
+  margin: 5px;
+  width: 26px;
+  height: 26px;
+  cursor: pointer;
+  border-radius: 50%;
+  border: 5px solid ${(props) => props.theme.colors.twitter_dark_hover};
+  &:hover {
+    border: 5px solid ${(props) => props.theme.colors.twitter_light_hover};
+    fill: ${(props) => props.theme.colors.twitter};
+    background-color: ${(props) => props.theme.colors.twitter_light_hover};
+  }
 `;
 
 export const ModalBox = styled.div`
   @media (min-width: 800px) {
-    width: 100%;
-    height: 100vh;
-    position: absolute;
+    position: fixed;
     top: 0;
+    bottom: 0;
     left: 0;
-    z-index: 10;
+    right: 0;
+    z-index: 99999;
     background-color: rgba(0, 0, 0, 0.8);
     display: flex;
     justify-content: center;
