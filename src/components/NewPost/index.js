@@ -35,7 +35,6 @@ const NewPost = ({ show, onClose }) => {
           <Text placeholder="O que esta acontecendo?" maxLength="140" />
         </Body>
         <Border />
-        {/*botoes de imagem/sticker? */}
       </Container>
     </ModalBox>
   ) : null;

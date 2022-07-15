@@ -1,7 +1,6 @@
 import styled from "styled-components";
 
 export const MenuButton = styled.button`
-  //background-color: black;
   display: flex;
   align-items: center;
   padding: 8.25px 0;

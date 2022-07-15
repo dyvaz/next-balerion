@@ -10,8 +10,13 @@ import {
 } from "./styles";
 
 import Link from "next/link";
+import { MenuButton } from "../Button/styles";
+import NewPost from "../NewPost";
+import React, { useState } from "react";
 
 const Main = ({ children }) => {
+  const [showModal, setShowModal] = useState(false);
+
   return (
     <Container>
       <div>{children}</div>
@@ -23,20 +28,21 @@ const Main = ({ children }) => {
 
         <SearchIcon />
 
-        <Link href={"/NewPost"}>
+        <MenuButton onClick={() => setShowModal(true)}>
           <Post>
             <PostIcon />
           </Post>
-        </Link>
+        </MenuButton>
 
-        <Link href={"/Notfications"}>
+        <Link href={"/notifications"}>
           <BellIcon />
         </Link>
 
-        <Link href={"/Profile"}>
+        <Link href={"/profile"}>
           <ProfileIcon />
         </Link>
       </BottomMenu>
+      <NewPost onClose={() => setShowModal(false)} show={showModal}></NewPost>
     </Container>
   );
 };

@@ -12,9 +12,7 @@ export const Box = styled.div`
   margin-top: 200px;
   width: 550px;
   heigth: 1600px;
-
   background-color: ${(props) => props.theme.colors.secondary};
-
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -35,12 +33,16 @@ export const Title = styled.div`
 `;
 
 export const Input = styled.input`
+  margin-top: 12px;
+  min-width: 60%;
+  height: min(40px, max(75px, 41vw));
+  cursor: pointer;
+  flex-wrap: wrap;
+  display: flex;
   padding: 10px 10px 10px 25px;
-  width: 350px;
-  height: 40px;
   border: 1px solid ${(props) => props.theme.colors.twitter};
   border-radius: 29.5px;
-  margin: 10px;
+  margin: 10px 0;
   background-color: ${(props) => props.theme.colors.twitter};
   outline: 0;
   &:focus {
@@ -62,9 +64,9 @@ export const Button = styled.button`
     background: ${(props) => props.theme.colors.twitter_light_hover};
   }
   &.exit {
+    margin: 5px;
     font-size: 14px;
     position: sticky;
-    margin: -10px -50px -20px -15px;
     width: 40px;
     height: 40px;
     background-color: ${(props) => props.theme.colors.twitter};
@@ -91,10 +93,12 @@ export const A = styled.div`
   }
 `;
 export const Exit = styled.div`
-  cursor: pointer;
-  margin: -60px 500px 0 0;
-  &:hover {
-    background: ${(props) => props.theme.colors.twitter_light_hover};
+  margin-top: -75px;
+  margin-left: -90%;
+  z-index: 40;
+  @media (max-width: 500px) {
+    z-index: 40;
   }
+  width: 50px;
+  height: 50px;
 `;
-// ${(props) => props.theme.colors.outline}

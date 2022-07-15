@@ -3,10 +3,9 @@ import GlobalStyle from "../styles/global";
 import theme from "../styles/theme";
 import Layout from "../components/Layout";
 import LayoutLogin from "../components/LayoutLogin";
-import Login from "./login";
 
 export default function App({ Component, pageProps }) {
-  let isLogado = false;
+  let isLogado = true;
   return (
     <>
       <ThemeProvider theme={theme}>

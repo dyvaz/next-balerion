@@ -110,4 +110,3 @@ export const ExitIcon = styled(ExitToApp)`
     }
   }
 `;
-//${(props) => props.theme.colors.like}

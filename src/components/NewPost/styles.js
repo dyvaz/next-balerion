@@ -1,23 +1,22 @@
 import styled from "styled-components";
 import { ArrowLeft } from "../../styles/Icons";
-//${(props) => props.theme.colors.search}
 
 export const Container = styled.div`
   display: flex;
   flex-direction: column;
   height: 100vh;
-  padding: 0 15px;
-  max-width: 700px;
-  @media (min-width: 800px) {
+  width: 100%;
+  @media (min-width: 700px) {
     background-color: ${(props) => props.theme.colors.twitter_dark_hover};
     color: #000;
-    width: 50%;
+    width: 60%;
     height: 30%;
     border-radius: 20px;
   }
 `;
 
 export const Header = styled.div`
+  padding: 0 10px;
   align-items: center;
   flex-direction: row;
   position: sticky;
@@ -33,20 +32,30 @@ export const Header = styled.div`
 `;
 export const BackIcon = styled(ArrowLeft)`
   margin: 5px;
+  margin-right: 10px;
   width: 26px;
   height: 26px;
   cursor: pointer;
   border-radius: 50%;
   border: 5px solid ${(props) => props.theme.colors.twitter_dark_hover};
+  background-color: ${(props) => props.theme.colors.twitter_dark_hover};
+  fill: ${(props) => props.theme.colors.twitter};
   &:hover {
     border: 5px solid ${(props) => props.theme.colors.twitter_light_hover};
     fill: ${(props) => props.theme.colors.twitter};
     background-color: ${(props) => props.theme.colors.twitter_light_hover};
   }
 `;
-
+//700px e vira o modal
 export const ModalBox = styled.div`
-  @media (min-width: 800px) {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 99999;
+  background-color: ${(props) => props.theme.colors.primary};
+  @media (min-width: 700px) {
     position: fixed;
     top: 0;
     bottom: 0;
