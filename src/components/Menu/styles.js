@@ -35,11 +35,12 @@ export const Topside = styled.div`
 `;
 
 export const Logo = styled(Dragon)`
+  flex-shrink: 0;
   cursor: pointer;
   margin-top: 10px;
   width: 41px;
   height: 41px;
-  margin-bottom: 20px;
+  margin-bottom: 8px;
 `;
 
 const iconCSS = css`

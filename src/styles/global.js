@@ -11,8 +11,7 @@ html, body, #root{
     max-heigth:100vh;
     max-width:100vw;
 
-    width: 100%;
-    heigth:100%
+
 }
 *, button, input {
     border: 0;

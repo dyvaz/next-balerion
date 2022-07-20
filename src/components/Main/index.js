@@ -28,7 +28,7 @@ const Main = ({ children }) => {
 
         <SearchIcon />
 
-        <MenuButton onClick={() => setShowModal(true)}>
+        <MenuButton className="postbotton" onClick={() => setShowModal(true)}>
           <Post>
             <PostIcon />
           </Post>

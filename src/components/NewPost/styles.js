@@ -5,7 +5,7 @@ export const Container = styled.div`
   display: flex;
   flex-direction: column;
   height: 100vh;
-  width: 100%;
+  max-width: 800px;
   @media (min-width: 700px) {
     background-color: ${(props) => props.theme.colors.twitter_dark_hover};
     color: #000;
@@ -46,7 +46,7 @@ export const BackIcon = styled(ArrowLeft)`
     background-color: ${(props) => props.theme.colors.twitter_light_hover};
   }
 `;
-//700px e vira o modal
+
 export const ModalBox = styled.div`
   position: fixed;
   top: 0;
@@ -62,7 +62,7 @@ export const ModalBox = styled.div`
     left: 0;
     right: 0;
     z-index: 99999;
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: rgba(0, 0, 0, 0.5);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -76,13 +76,8 @@ export const Body = styled.div`
 `;
 
 export const Border = styled.div`
-  max-width: 650px;
+  max-width: 95%;
   border-bottom: 1px solid ${(props) => props.theme.colors.outline};
-  @media (min-width: 900px) {
-    max-width: 600px;
-    border-bottom: 1px solid ${(props) => props.theme.colors.outline};
-  }
-
   margin-left: 2%;
 `;
 export const Text = styled.textarea`

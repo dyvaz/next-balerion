@@ -1,4 +1,3 @@
-import Router from "next/router";
 import React, { useState } from "react";
 
 import {
@@ -14,13 +13,15 @@ import {
   Avatar,
   ProfileData,
   ExitIcon,
+  LogoBotton,
 } from "./styles";
 import { MenuButton } from "../Button/styles";
 import ActiveLink from "../ActiveLink";
 import NewPost from "../NewPost";
 
 const MenuBar = () => {
-  const [showModal, setShowModal] = useState(false);
+  let [showModal, setShowModal] = useState(false);
+
   return (
     <>
       <Container>
@@ -28,6 +29,7 @@ const MenuBar = () => {
           <ActiveLink href={"/home"}>
             <Logo />
           </ActiveLink>
+
           <ActiveLink href={"/home"} activeClassName="active">
             <MenuButton>
               <HomeIcon />
@@ -41,6 +43,7 @@ const MenuBar = () => {
               <span className="name">Buscar</span>
             </MenuButton>
           </ActiveLink>
+
           <ActiveLink href={"/notifications"} activeClassName="active">
             <MenuButton>
               <BellIcon />

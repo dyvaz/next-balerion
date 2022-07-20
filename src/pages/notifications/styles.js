@@ -6,8 +6,9 @@ export const Container = styled.div`
   @media (min-width: 500px) {
     //border-left: 1px solid ${(props) => props.theme.colors.outline};
     //border-right: 1px solid ${(props) => props.theme.colors.outline};
+    min-height: 965px;
   }
-  height: 900px;
+  min-height: 870px;
 `;
 
 export const Avatar = styled.div`

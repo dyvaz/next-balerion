@@ -1,13 +1,13 @@
 import styled from "styled-components";
 
-export const MenuButton = styled.button`
+export const MenuButton = styled.div`
   display: flex;
   align-items: center;
   padding: 8.25px 0;
   outline: 0;
   cursor: pointer;
   border-radius: 55px;
-
+  margin: 8px 0;
   &:hover {
     background: ${(props) => props.theme.colors.twitter_dark_hover};
   }
@@ -63,6 +63,12 @@ export const MenuButton = styled.button`
       }
     }
   }
+  &.postbotton {
+    margin: 0;
+    &:hover {
+      background: ${(props) => props.theme.colors.primary};
+    }
+  }
 
   &.post {
     background-color: ${(props) => props.theme.colors.twitter};
@@ -107,6 +113,8 @@ export const LargeButton = styled.button`
 
   cursor: pointer;
   border-radius: 55px;
+  text-decoration: none;
+
   &:hover {
     > span {
       color: ${(props) => props.theme.colors.twitter};
@@ -146,12 +154,20 @@ export const LargeButton = styled.button`
       }
     }
   }
-  &.profile {
-    float: rigth;
-    margin-left: auto;
-    margin-top: -30px;
-  }
 `;
+// export const linkA = styled.a`
+//   height: 40px;
+//   max-width: 100px;
+//   min-width: 90px;
+//   padding: 60px;
+// `;
+
+// > span {
+//   padding-top: 30px;
+//   background: red;
+//   margin: 100px 10px -120px 30px;
+//   //margin-top: 30px;
+// }
+
 //${(props) => props.theme.colors.gray}
-//${(props) => props.theme.colors.twitter_dark_hover}
 //twitter-light-hover

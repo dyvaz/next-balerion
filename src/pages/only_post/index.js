@@ -40,6 +40,7 @@ const PostOlny = () => {
               <Status>
                 <CommentIcon />
               </Status>
+
               <Status>
                 <RetweetIcon />
               </Status>
