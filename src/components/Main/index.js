@@ -18,32 +18,34 @@ const Main = ({ children }) => {
   const [showModal, setShowModal] = useState(false);
 
   return (
-    <Container>
-      <div>{children}</div>
-      <div id="modal-root"></div>
-      <BottomMenu>
-        <Link href={"/"}>
-          <HomeIcon />
-        </Link>
+    <>
+      <Container>
+        <div>{children}</div>
+        <div id="modal-root"></div>
+        <BottomMenu>
+          <Link href={"/"}>
+            <HomeIcon />
+          </Link>
+          <Link href={"/search"}>
+            <SearchIcon />
+          </Link>
+          <MenuButton className="postbotton" onClick={() => setShowModal(true)}>
+            <Post>
+              <PostIcon />
+            </Post>
+          </MenuButton>
 
-        <SearchIcon />
+          <Link href={"/notifications"}>
+            <BellIcon />
+          </Link>
 
-        <MenuButton className="postbotton" onClick={() => setShowModal(true)}>
-          <Post>
-            <PostIcon />
-          </Post>
-        </MenuButton>
-
-        <Link href={"/notifications"}>
-          <BellIcon />
-        </Link>
-
-        <Link href={"/profile"}>
-          <ProfileIcon />
-        </Link>
-      </BottomMenu>
+          <Link href={"/profile"}>
+            <ProfileIcon />
+          </Link>
+        </BottomMenu>
+      </Container>
       <NewPost onClose={() => setShowModal(false)} show={showModal}></NewPost>
-    </Container>
+    </>
   );
 };
 

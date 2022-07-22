@@ -8,7 +8,7 @@ export const Container = styled.div`
     //border-right: 1px solid ${(props) => props.theme.colors.outline};
     min-height: 965px;
   }
-  min-height: 870px;
+  min-height: 898px;
 `;
 
 export const Avatar = styled.div`

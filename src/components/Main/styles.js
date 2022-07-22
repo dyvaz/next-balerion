@@ -33,6 +33,7 @@ export const ProfileInfo = styled.div`
 `;
 
 export const BottomMenu = styled.div`
+  z-index: 5;
   position: sticky;
   bottom: 0;
   left: 0;

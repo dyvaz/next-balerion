@@ -3,25 +3,22 @@ import styled from "styled-components";
 import { Search } from "../../styles/Icons";
 
 export const Container = styled.div`
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    width: 399px;
-    min-height: 960px;
-  
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  width: 399px;
+  min-height: 960px;
   @media (max-width: 500px) {
-    min-height: 900px;
+    min-height: 898px;
   }
 `;
 
-
 export const SearchWrapper = styled.div`
-  padding: 10px 24px;
+  padding: 10px 0;
   width: min(399px, 100%);
-  position: fixed;
-  top: 0;
-  z-index: 2;
-  max-height: 57px;
+  //position: fixed;
+  //z-index: 2;
+  //max-height: 57px;
 `;
 
 export const SearchInput = styled.input`
