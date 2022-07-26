@@ -1,5 +1,5 @@
 import React from "react";
-
+import Link from "next/link";
 import {
   Container,
   Body,
@@ -21,34 +21,36 @@ import {
 
 export const Tweet = () => {
   return (
-    <Container>
-      <Body>
-        <Avatar />
-        <Content>
-          <Header>
-            <span>@dyvaz</span> <LockIcon />
-            <Dot />
-            <time>1 de jun</time>
-          </Header>
+    <Link href="/only_post">
+      <Container>
+        <Body>
+          <Avatar />
+          <Content>
+            <Header>
+              <span>@dyvaz</span> <LockIcon />
+              <Dot />
+              <time>1 de jun</time>
+            </Header>
 
-          {/* eslint-disable-next-line jsx-a11y/accessible-emoji */}
-          <Description>Teste sem foto</Description>
+            {/* eslint-disable-next-line jsx-a11y/accessible-emoji */}
+            <Description>Teste sem foto</Description>
 
-          <Icons>
-            <Status className="post">
-              <CommentIcon />1
-            </Status>
+            <Icons>
+              <Status className="post">
+                <CommentIcon />1
+              </Status>
 
-            <RetweetIcon />
+              <RetweetIcon />
 
-            <Status className="post">
-              <LikeIcon />
-              999
-            </Status>
-          </Icons>
-        </Content>
-      </Body>
-    </Container>
+              <Status className="post">
+                <LikeIcon />
+                999
+              </Status>
+            </Icons>
+          </Content>
+        </Body>
+      </Container>
+    </Link>
   );
 };
 export const TweetComFoto = () => {
@@ -66,8 +68,6 @@ export const TweetComFoto = () => {
             <Dot />
             <time>1 de jun</time>
           </Header>
-
-          {/* eslint-disable-next-line jsx-a11y/accessible-emoji */}
           <Description>New post com foto</Description>
 
           <ImageContent />

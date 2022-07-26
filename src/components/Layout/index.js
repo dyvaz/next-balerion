@@ -10,7 +10,7 @@ function Layout({ children }) {
     <>
       <Head>
         <title>Balerion Next</title>
-        <link rel="icon" href="dragon.png" />
+        <link rel="icon" href="/dragon.png" />
       </Head>
 
       <Container>

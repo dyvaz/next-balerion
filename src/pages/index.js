@@ -1,9 +1,9 @@
 import HomePage from "./home";
-import Login from "../pages/login";
+import Login from "../pages/auth/login";
 
 function Index() {
-  // let isLogado = true;
-  // return <>{isLogado ? <HomePage /> : <Login />}</>;
-  return <HomePage />;
+  let isLogged = true;
+  return <>{isLogged ? <HomePage /> : <Login />}</>;
+  // return <HomePage />;
 }
 export default Index;

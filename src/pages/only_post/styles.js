@@ -32,7 +32,7 @@ export const Avatar = styled.div`
   height: 49px;
   border-radius: 50%;
   flex-shrink: 0;
-  background: var(--gray);
+  background: ${(props) => props.theme.colors.gray};
   position: absolute;
   top: 0;
   left: 0;
@@ -159,7 +159,7 @@ export const T = styled.div`
   max-width: 660px;
   width: 100%;
   border-top: 1px solid ${(props) => props.theme.colors.outline};
-  border-bottom: 1px solid ${(props) => props.theme.colors.outline};
+  //border-bottom: 1px solid ${(props) => props.theme.colors.outline};
   > p {
     font-size: 17px;
     margin: 10px 0;

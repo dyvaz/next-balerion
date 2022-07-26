@@ -1,6 +1,5 @@
 import Link from "next/link";
 import React from "react";
-import LayoutLogin from "../../components/LayoutLogin";
 
 import { Title, Input, Button, A } from "../login/styles";
 
@@ -13,7 +12,7 @@ const NewAccount = () => {
       <Input type="password" placeholder="    Password" />
       <Input type="password" placeholder="    Confirm assword" />
       <Button>Create</Button>
-      <Link href={"/login"}>
+      <Link href={"/auth/login"}>
         <A>Already have an account? Login to Balerion</A>
       </Link>
     </>

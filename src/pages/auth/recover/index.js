@@ -5,7 +5,7 @@ const RecuperarSenha = () => {
   return (
     <>
       <Exit>
-        <Link href={"/login"}>
+        <Link href={"/auth/login"}>
           <Button className="exit">X</Button>
         </Link>
       </Exit>

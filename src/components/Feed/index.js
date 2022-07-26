@@ -9,9 +9,8 @@ const Feed = () => {
   return (
     <Container>
       <Tweets>
-        {/* <Link href="/PostOnly">
-          <Tweet />
-        </Link> */}
+        <Tweet />
+
         <TweetComFoto />
         <TweetComFoto />
         <Tweet />

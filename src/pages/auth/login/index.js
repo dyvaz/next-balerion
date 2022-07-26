@@ -1,6 +1,5 @@
 import Link from "next/link";
 import { Title, Input, Button, A } from "./styles";
-import LayoutLogin from "../../components/LayoutLogin";
 
 const Login = () => {
   return (
@@ -10,10 +9,10 @@ const Login = () => {
       <Input type="password" placeholder="   Password" />
       <Button>Login</Button>
 
-      <Link href={"/recover"}>
+      <Link href={"/auth/recover"}>
         <A>Forget password?</A>
       </Link>
-      <Link href={"/new_account"}>
+      <Link href={"/auth/new_account"}>
         <A>Sing up for Balerion</A>
       </Link>
     </>
