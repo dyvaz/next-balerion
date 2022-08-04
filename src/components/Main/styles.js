@@ -9,6 +9,7 @@ export const Container = styled.div`
     border-left: 1px solid ${(props) => props.theme.colors.outline};
     border-right: 1px solid ${(props) => props.theme.colors.outline};
   }
+  flex-shrink: 0;
 `;
 
 export const H1 = styled.h1`

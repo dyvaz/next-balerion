@@ -6,7 +6,7 @@ import {
   Button,
   Link,
   Logo,
-} from "../Login/styles";
+} from "../auth/login/styles";
 
 export const ConfirmModal = () => {
   return (

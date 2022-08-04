@@ -5,6 +5,7 @@ export const Container = styled.div`
   max-height: 100%;
   min-height: 600px;
   max-width: 100%;
+  //min-width:500px
   justify-content: space-around;
   @media (min-width: 1000px) {
     width: 800px;
@@ -44,7 +45,8 @@ export const Input = styled.input`
   font-size: 20px;
   border: 2px solid ${(props) => props.theme.colors.twitter_ligth_hover};
   border-radius: 10px;
-  width: 396px;
+  width: 95%;
+  max-width: 396px;
   padding-left: 10px;
   padding-top: 15px;
   outline: 0;
@@ -55,7 +57,8 @@ export const Bio = styled.textarea`
   font-size: 20px;
   border: 2px solid ${(props) => props.theme.colors.twitter_ligth_hover};
   border-radius: 10px;
-  width: 396px;
+  max-width: 396px;
+  width: 95%;
   padding-left: 10px;
   padding-top: 25px;
   outline: 0;

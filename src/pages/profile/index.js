@@ -5,6 +5,7 @@ import { Tab } from "../../components/Feed/styles";
 import { Container, Banner, Avatar, ProfileData, Followage } from "./styles";
 import EditProfile from "../../components/edit_profile";
 import React, { useState } from "react";
+import Link from "next/link";
 const Profile = () => {
   let [showModal, setShowModal] = useState(false);
 
@@ -24,11 +25,19 @@ const Profile = () => {
 
           <Followage>
             <span>
-              <strong>999</strong> seguindo
+              <Link href={"/follow_list/following"}>
+                <p>
+                  <strong>999</strong> seguindo
+                </p>
+              </Link>
             </span>
 
             <span>
-              <strong>999 </strong> seguidores
+              <Link href={"/follow_list/followers"}>
+                <p>
+                  <strong>999</strong> seguidores
+                </p>
+              </Link>
             </span>
           </Followage>
         </ProfileData>

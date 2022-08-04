@@ -17,12 +17,20 @@ import {
   Text,
   T,
 } from "./styles";
+import Link from "next/link";
+import { BackIcon, Header } from "../../components/NewPost/styles";
 
 const PostOlny = () => {
   return (
     <Main>
       <Container>
         <Body>
+          <Header className="page">
+            <Link href={"/home"}>
+              <BackIcon />
+            </Link>
+            <h1>Post</h1>
+          </Header>
           <Post>
             <Content>
               <Cab>

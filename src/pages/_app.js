@@ -7,14 +7,18 @@ import Router from "next/router";
 import React, { useEffect } from "react";
 
 export default function App({ Component, pageProps }) {
-  let isLogged = true;
+  let isSignedIn = true;
+  let er = false;
   useEffect(() => {
-    console.log(isLogged);
     const { pathname } = Router;
-    if (!pathname.includes("/auth") && !isLogged) {
+    er = pathname === "/404";
+    console.log(er);
+    console.log(pathname);
+    if (!pathname.includes("/auth") && !isSignedIn) {
       Router.push("/auth/login");
     }
-    if (isLogged) {
+    //quando logado, qualquer outra rota leva para um perfil
+    if (isSignedIn && pathname == "/login") {
       Router.push("/home");
     }
   }, []);
@@ -23,7 +27,8 @@ export default function App({ Component, pageProps }) {
     <>
       <ThemeProvider theme={theme}>
         <GlobalStyle />
-        {isLogged ? (
+
+        {isSignedIn ? (
           <Layout>
             <Component {...pageProps} />
           </Layout>

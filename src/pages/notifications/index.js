@@ -1,4 +1,5 @@
 import Main from "../../components/Main";
+import { Header } from "../../components/NewPost/styles";
 import { RetweetIcon, LikeIcon } from "../../components/Twett/styles";
 import {
   Container,
@@ -15,6 +16,9 @@ const Notfications = () => {
   return (
     <Main>
       <Container>
+        <Header className="page">
+          <h2>Notfications</h2>
+        </Header>
         <Section>
           <Avatar />
           <Box>

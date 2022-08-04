@@ -23,8 +23,9 @@ export const Header = styled.div`
   top: 0;
   z-index: 2;
   display: flex;
-  h1 {
-    padding-top: 10px;
+  &.page {
+    background-color: ${(props) => props.theme.colors.primary};
+    height: 53px;
   }
   a {
     margin-left: -10px;
