@@ -9,11 +9,13 @@ import React, { useEffect } from "react";
 export default function App({ Component, pageProps }) {
   let isSignedIn = true;
   let er = false;
+  //let public = ["/auth", "/404", "/profile"];
   useEffect(() => {
     const { pathname } = Router;
     er = pathname === "/404";
     console.log(er);
     console.log(pathname);
+
     if (!pathname.includes("/auth") && !isSignedIn) {
       Router.push("/auth/login");
     }
