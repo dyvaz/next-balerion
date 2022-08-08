@@ -58,5 +58,8 @@ export const Followage = styled.div`
     & + span {
       margin-left: 20px;
     }
+    > p {
+      cursor: pointer;
+    }
   }
 `;

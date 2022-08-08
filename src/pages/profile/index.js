@@ -2,7 +2,14 @@ import { LargeButton } from "../../components/Button/styles";
 import Main from "../../components/Main";
 import Feed from "../../components/Feed";
 import { Tab } from "../../components/Feed/styles";
-import { Container, Banner, Avatar, ProfileData, Followage } from "./styles";
+import {
+  Container,
+  Banner,
+  Avatar,
+  ProfileData,
+  Followage,
+  followList,
+} from "./styles";
 import EditProfile from "../../components/edit_profile";
 import React, { useState } from "react";
 import Link from "next/link";
