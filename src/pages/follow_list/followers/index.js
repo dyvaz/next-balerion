@@ -2,6 +2,8 @@ import Link from "next/link";
 import Main from "../../../components/Main";
 import { Tudo, Nav, A, Item, Button, Top, Section } from "../styles";
 
+import { UserTwo } from "../../../components/User";
+
 export const Followers = () => {
   return (
     <Main>
@@ -16,9 +18,11 @@ export const Followers = () => {
         </Nav>
         <Section>
           <Item>
+            <UserTwo />
             <Button>Follow</Button>
           </Item>
           <Item>
+            <UserTwo />
             <Button>Follow</Button>
           </Item>
         </Section>

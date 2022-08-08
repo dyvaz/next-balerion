@@ -1,6 +1,7 @@
 import Link from "next/link";
 import Main from "../../../components/Main";
 import { Tudo, Nav, A, Item, Button, Top, Section } from "../styles";
+import { User } from "../../../components/User";
 
 const Following = () => {
   return (
@@ -16,9 +17,11 @@ const Following = () => {
         </Nav>
         <Section>
           <Item>
+            <User />
             <Button>Following</Button>
           </Item>
           <Item>
+            <User />
             <Button>Following</Button>
           </Item>
         </Section>
