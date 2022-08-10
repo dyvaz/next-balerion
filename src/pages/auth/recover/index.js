@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { Title, Input, Button, Exit } from "../login/styles";
+import { Title, Input, Button, Exit } from "../../../components/Login/styles";
 
 const RecuperarSenha = () => {
   return (

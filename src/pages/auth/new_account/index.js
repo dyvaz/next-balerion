@@ -1,7 +1,7 @@
 import Link from "next/link";
 import React from "react";
 
-import { Title, Input, Button, A } from "../login/styles";
+import { Title, Input, Button, A } from "../../../components/Login/styles";
 
 const NewAccount = () => {
   return (

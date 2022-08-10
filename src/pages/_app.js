@@ -7,22 +7,21 @@ import Router from "next/router";
 import React, { useEffect } from "react";
 
 export default function App({ Component, pageProps }) {
-  let isSignedIn = true;
-  let er = false;
-  //let public = ["/auth", "/404", "/profile"];
+  let isSignedIn = false;
+  // let er = false;
+
   useEffect(() => {
     const { pathname } = Router;
-    er = pathname === "/404";
-    console.log(er);
+    // er = pathname === "/404";
     console.log(pathname);
-
     if (!pathname.includes("/auth") && !isSignedIn) {
+      console.log("test");
       Router.push("/auth/login");
     }
-    //quando logado, qualquer outra rota leva para um perfil
-    if (isSignedIn && pathname == "/login") {
-      Router.push("/home");
-    }
+    // //quando logado, qualquer outra rota leva para um perfil
+    // if (isSignedIn && pathname == "/login") {
+    //   Router.push("/home");
+    // }
   }, []);
 
   return (

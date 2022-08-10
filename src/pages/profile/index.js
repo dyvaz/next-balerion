@@ -9,7 +9,7 @@ import {
   ProfileData,
   Followage,
   followList,
-} from "./styles";
+} from "../../components/Profile/styles";
 import EditProfile from "../../components/edit_profile";
 import React, { useState } from "react";
 import Link from "next/link";

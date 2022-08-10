@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { Title, Input, Button, A } from "./styles";
+import { Title, Input, Button, A } from "../../../components/Login/styles";
 
 const Login = () => {
   return (

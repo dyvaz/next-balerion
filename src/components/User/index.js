@@ -1,5 +1,5 @@
 import React from "react";
-import { Avatar, Box } from "../../pages/notifications/styles";
+import { Avatar, Box } from "../Notification/styles";
 import { Container, Cab } from "./styles";
 
 export const User = () => {

@@ -1,6 +1,6 @@
 import React from "react";
 
-import { Container } from "./styles";
+import { Container } from "../../components/Home/styles";
 import PostBox from "../../components/PostBox";
 import Main from "../../components/Main";
 import Feed from "../../components/Feed";

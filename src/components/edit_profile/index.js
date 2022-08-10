@@ -1,5 +1,5 @@
 import React from "react";
-import { Banner, Avatar } from "../../pages/profile/styles";
+import { Banner, Avatar } from "../Profile/styles";
 import { ProfileInfo } from "../Main/styles";
 import { Container, Text, Body, Sp, Input, Bio, SaveButton } from "./styles";
 import { LargeButton } from "../Button/styles";

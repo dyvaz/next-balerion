@@ -16,7 +16,7 @@ import {
   LockIcon,
   Text,
   T,
-} from "./styles";
+} from "../../components/OnlyPost/styles";
 import Link from "next/link";
 import { BackIcon, Header } from "../../components/NewPost/styles";
 

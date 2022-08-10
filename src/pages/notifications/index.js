@@ -10,7 +10,7 @@ import {
   Content,
   Icons,
   P,
-} from "./styles";
+} from "../../components/Notification/styles";
 
 const Notfications = () => {
   return (
