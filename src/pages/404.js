@@ -7,7 +7,7 @@ export default function NotFound() {
 
       <p>Parece que esta pagina nao existe!</p>
 
-      <Link href={"/"}>Voltar</Link>
+      <Link href={"/home"}>Voltar</Link>
     </>
   );
 }
