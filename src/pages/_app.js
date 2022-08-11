@@ -7,7 +7,7 @@ import Router from "next/router";
 import React, { useEffect } from "react";
 
 export default function App({ Component, pageProps }) {
-  let isSignedIn = false;
+  let isSignedIn = true;
   // let er = false;
 
   useEffect(() => {
