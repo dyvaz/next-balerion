@@ -6,7 +6,7 @@ const LayoutLogin = ({ children }) => {
     <>
       <Head>
         <title>Login | Balerion Next</title>
-        <link rel="icon" href="/dragon.png" />
+        <link rel="icon" href="/next-balerion/dragon.png" />
       </Head>
       <Container>
         <Box>
