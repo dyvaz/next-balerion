@@ -69,7 +69,7 @@ const MenuBar = () => {
           <ProfileData>
             <span>@dyvaz</span>
           </ProfileData>
-          <ActiveLink href={"/login"}>
+          <ActiveLink href={"/auth/login"}>
             <ExitIcon />
           </ActiveLink>
         </Botside>
