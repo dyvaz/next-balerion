@@ -3,32 +3,26 @@ import GlobalStyle from "../styles/global";
 import theme from "../styles/theme";
 import Layout from "../components/Layout";
 import LayoutLogin from "../components/LayoutLogin";
-import Router from "next/router";
-import React, { useEffect } from "react";
+import { useRouter } from "next/router";
+import React, { useEffect, useState } from "react";
 
 export default function App({ Component, pageProps }) {
-  let isSignedIn = true;
-  // let er = false;
-
+  const router = useRouter();
+  const [isSignedIn, setIsSingedIn] = useState(true);
   useEffect(() => {
-    const { pathname } = Router;
-    // er = pathname === "/404";
-    console.log(pathname);
-    if (!pathname.includes("/auth") && !isSignedIn) {
-      console.log("test");
-      Router.push("/auth/login");
+    if (router.pathname == "/404" || router.pathname.startsWith("/auth/")) {
+      setIsSingedIn(false);
+    } else if (router.pathname == "/login") {
+      router.push("/auth/login");
+      setIsSingedIn(false);
+    } else {
+      setIsSingedIn(true);
     }
-    // //quando logado, qualquer outra rota leva para um perfil
-    // if (isSignedIn && pathname == "/login") {
-    //   Router.push("/home");
-    // }
-  }, []);
-
+  }, [router.pathname]);
   return (
     <>
       <ThemeProvider theme={theme}>
         <GlobalStyle />
-
         {isSignedIn ? (
           <Layout>
             <Component {...pageProps} />
@@ -42,3 +36,5 @@ export default function App({ Component, pageProps }) {
     </>
   );
 }
+//Como ainda nao finalizei a api, o teste para qual layout mostrar é só o
+//nome da pagina, ainda nao valida se esta realmente logado
