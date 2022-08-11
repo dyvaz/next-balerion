@@ -17,18 +17,18 @@ import {
   Text,
   T,
 } from "../../components/OnlyPost/styles";
-import Link from "next/link";
 import { BackIcon, Header } from "../../components/NewPost/styles";
+import { useRouter } from "next/router";
 
 const PostOlny = () => {
+  const router = useRouter();
   return (
     <Main>
       <Container>
         <Body>
           <Header className="page">
-            <Link href={"/home"}>
-              <BackIcon />
-            </Link>
+            <BackIcon onClick={() => router.back()} />
+
             <h1>Post</h1>
           </Header>
           <Post>
