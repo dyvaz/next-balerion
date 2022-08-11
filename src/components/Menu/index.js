@@ -13,7 +13,6 @@ import {
   Avatar,
   ProfileData,
   ExitIcon,
-  LogoBotton,
 } from "./styles";
 import { MenuButton } from "../Button/styles";
 import ActiveLink from "../ActiveLink";
