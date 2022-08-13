@@ -18,7 +18,6 @@ import {
   VerifiedIcon,
   LockIcon,
 } from "./styles";
-import Image from "next/image";
 
 export const Tweet = () => {
   return (
