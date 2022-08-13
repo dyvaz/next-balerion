@@ -28,15 +28,17 @@ export const Post = styled.div`
 `;
 
 export const Avatar = styled.div`
-  width: 49px;
-  height: 49px;
-  border-radius: 50%;
   flex-shrink: 0;
-  background: ${(props) => props.theme.colors.gray};
+
   position: absolute;
   top: 0;
   left: 0;
   margin: 2px 0 0 5px;
+  > img {
+    width: 49px;
+    height: 49px;
+    border-radius: 50%;
+  }
 `;
 export const Content = styled.div`
   display: flex;

@@ -34,7 +34,13 @@ const PostOlny = () => {
           <Post>
             <Content>
               <Cab>
-                <Avatar />
+                <Avatar>
+                  <img
+                    className="image"
+                    src="https://www.thispersondoesnotexist.com/image"
+                    alt="foto"
+                  />
+                </Avatar>
                 <span>
                   @dyvaz <LockIcon />
                 </span>
