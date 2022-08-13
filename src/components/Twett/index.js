@@ -18,13 +18,20 @@ import {
   VerifiedIcon,
   LockIcon,
 } from "./styles";
+import Image from "next/image";
 
 export const Tweet = () => {
   return (
     <Link href="/only_post">
       <Container>
         <Body>
-          <Avatar />
+          <Avatar>
+            <img
+              className="image"
+              src="https://www.thispersondoesnotexist.com/image"
+              alt="foto"
+            />
+          </Avatar>
           <Content>
             <Header>
               <span>@dyvaz</span> <LockIcon />
@@ -61,7 +68,13 @@ export const TweetComFoto = () => {
         Você retweetou
       </Retweeted>
       <Body>
-        <Avatar />
+        <Avatar>
+          <img
+            className="image"
+            src="https://www.thispersondoesnotexist.com/image"
+            alt="foto"
+          />
+        </Avatar>
         <Content>
           <Header>
             <span>@user123</span> <VerifiedIcon />
@@ -69,9 +82,15 @@ export const TweetComFoto = () => {
             <time>1 de jun</time>
           </Header>
           <Description>New post com foto</Description>
-
-          <ImageContent />
-
+          <ImageContent>
+            <img
+              className="image"
+              src="https://www.thispersondoesnotexist.com/image"
+              alt="foto"
+              height="min(285px, max(175px, 41vw))"
+              width="100%"
+            />
+          </ImageContent>
           <Icons>
             <Status className="post">
               <CommentIcon />

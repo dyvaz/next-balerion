@@ -30,14 +30,15 @@ export const Body = styled.div`
 `;
 
 export const Avatar = styled.div`
-  width: 49px;
-  height: 49px;
-  border-radius: 50%;
   flex-shrink: 0;
-  background: ${(props) => props.theme.colors.gray};
   position: absolute;
   top: 0;
   left: 0;
+  > img {
+    width: 49px;
+    height: 49px;
+    border-radius: 50%;
+  }
 `;
 export const Content = styled.div`
   display: flex;
@@ -77,13 +78,15 @@ export const Description = styled.p`
 
 export const ImageContent = styled.div`
   margin-top: 12px;
-  width: 100%;
-  height: min(285px, max(175px, 41vw));
-  background: ${(props) => props.theme.colors.outline};
-  border-radius: 14px;
+
+  // background: ${(props) => props.theme.colors.outline};
+  // border-radius: 14px;
   cursor: pointer;
   &:hover {
     opacity: 0.7;
+  }
+  > img {
+    border-radius: 14px;
   }
 `;
 

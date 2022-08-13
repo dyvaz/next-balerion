@@ -20,12 +20,15 @@ export const Banner = styled.div`
 export const Avatar = styled.div`
   width: max(100px, min(135px, 23vw));
   height: max(100px, min(135px, 23vw));
-  border: 3.75px solid ${(props) => props.theme.colors.primay};
-  background: ${(props) => props.theme.colors.gray};
-  border-radius: 50%;
+
   position: absolute;
   bottom: max(-60px, -10vw);
   left: 15px;
+  > img {
+    border-radius: 50%;
+    width: max(100px, min(135px, 23vw));
+    height: max(100px, min(135px, 23vw));
+  }
 `;
 
 export const ProfileData = styled.div`

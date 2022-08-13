@@ -9,7 +9,6 @@ import {
   BackIcon,
 } from "./styles";
 import { LargeButton } from "../Button/styles";
-import React, { useEffect, useState } from "react";
 import ReactDOM from "react-dom";
 const NewPost = ({ show, onClose }) => {
   const handleCloseClick = (e) => {
@@ -31,7 +30,13 @@ const NewPost = ({ show, onClose }) => {
           <span>Postar</span>
         </LargeButton>
         <Body>
-          <Avatar />
+          <Avatar>
+            <img
+              className="image"
+              src="https://www.thispersondoesnotexist.com/image"
+              alt="foto"
+            />
+          </Avatar>
           <Text placeholder="O que esta acontecendo?" maxLength="140" />
         </Body>
         <Border />

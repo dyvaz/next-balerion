@@ -13,11 +13,12 @@ export const Container = styled.div`
 
 export const Avatar = styled.div`
   margin: 8px;
-  width: 49px;
-  height: 49px;
-  border-radius: 50%;
-  background: ${(props) => props.theme.colors.gray};
   position: absolute;
+  > img {
+    width: 49px;
+    height: 49px;
+    border-radius: 50%;
+  }
 `;
 export const Box = styled.div`
   display: flex;

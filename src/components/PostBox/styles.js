@@ -25,10 +25,11 @@ export const Text = styled.textarea`
 `;
 export const Avatar = styled.div`
   margin: 0 10px;
-  width: 49px;
-  height: 49px;
-  border-radius: 50%;
   flex-shrink: 0;
-  background: ${(props) => props.theme.colors.gray};
   position: absolute;
+  > img {
+    width: 49px;
+    height: 49px;
+    border-radius: 50%;
+  }
 `;

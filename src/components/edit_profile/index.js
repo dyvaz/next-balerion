@@ -2,7 +2,6 @@ import React from "react";
 import { Banner, Avatar } from "../Profile/styles";
 import { ProfileInfo } from "../Main/styles";
 import { Container, Text, Body, Sp, Input, Bio, SaveButton } from "./styles";
-import { LargeButton } from "../Button/styles";
 import { ModalBox, BackIcon, Header } from "../NewPost/styles";
 import ReactDOM from "react-dom";
 
@@ -27,7 +26,13 @@ const EditProfile = ({ show, onClose }) => {
           </SaveButton>
         </ProfileInfo>
         <Banner>
-          <Avatar />
+          <Avatar>
+            <img
+              className="image"
+              src="https://www.thispersondoesnotexist.com/image"
+              alt="foto"
+            />
+          </Avatar>
         </Banner>
         <Body>
           <Text maxLength="50">

@@ -72,13 +72,15 @@ export const Botside = styled.div`
 `;
 
 export const Avatar = styled.div`
-  width: 45px;
-  height: 45px;
   flex-shrink: 0;
-  border-radius: 50%;
-  background: ${(props) => props.theme.colors.gray};
   &:hover {
     box-shadow: 0 0 1em gray;
+  }
+  > img {
+    width: 45px;
+    height: 45px;
+    flex-shrink: 0;
+    border-radius: 50%;
   }
 `;
 

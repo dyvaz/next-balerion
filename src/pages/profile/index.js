@@ -8,7 +8,6 @@ import {
   Avatar,
   ProfileData,
   Followage,
-  followList,
 } from "../../components/Profile/styles";
 import EditProfile from "../../components/edit_profile";
 import React, { useState } from "react";
@@ -20,7 +19,15 @@ const Profile = () => {
     <Main>
       <Container>
         <Banner>
-          <Avatar />
+          <Avatar>
+            <img
+              className="image"
+              src="https://www.thispersondoesnotexist.com/image"
+              alt="foto"
+              // height="min(285px, max(175px, 41vw))"
+              // width="100%"
+            />
+          </Avatar>
         </Banner>
 
         <ProfileData>

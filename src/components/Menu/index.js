@@ -65,7 +65,13 @@ const MenuBar = () => {
         </Topside>
 
         <Botside>
-          <Avatar />
+          <Avatar>
+            <img
+              className="image"
+              src="https://www.thispersondoesnotexist.com/image"
+              alt="foto"
+            />
+          </Avatar>
           <ProfileData>
             <span>@dyvaz</span>
           </ProfileData>

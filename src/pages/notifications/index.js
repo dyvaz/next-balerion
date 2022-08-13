@@ -20,7 +20,13 @@ const Notfications = () => {
           <h2>Notfications</h2>
         </Header>
         <Section>
-          <Avatar />
+          <Avatar>
+            <img
+              className="image"
+              src="https://www.thispersondoesnotexist.com/image"
+              alt="foto"
+            />
+          </Avatar>
           <Box>
             {/* toda a box vai ser um botao/link para o post */}
             <Title>
@@ -36,7 +42,13 @@ const Notfications = () => {
           </Box>
         </Section>
         <Section>
-          <Avatar />
+          <Avatar>
+            <img
+              className="image"
+              src="https://www.thispersondoesnotexist.com/image"
+              alt="foto"
+            />
+          </Avatar>
           <Box>
             <Title>
               <span>@tx</span>

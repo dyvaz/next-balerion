@@ -5,7 +5,13 @@ const PostBox = () => {
   return (
     <Container>
       <Body>
-        <Avatar />
+        <Avatar>
+          <img
+            className="image"
+            src="https://www.thispersondoesnotexist.com/image"
+            alt="foto"
+          />
+        </Avatar>
         <Text placeholder="O que esta acontecendo?" maxLength="140" />
         <LargeButton>
           <span>Postar</span>
