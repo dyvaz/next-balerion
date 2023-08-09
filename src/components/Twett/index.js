@@ -27,7 +27,7 @@ export const Tweet = () => {
           <Avatar>
             <img
               className="image"
-              src="https://www.thispersondoesnotexist.com/image"
+              src="https://www.thispersondoesnotexist.com"
               alt="foto"
             />
           </Avatar>
@@ -70,7 +70,7 @@ export const TweetComFoto = () => {
         <Avatar>
           <img
             className="image"
-            src="https://www.thispersondoesnotexist.com/image"
+            src="https://www.thispersondoesnotexist.com"
             alt="foto"
           />
         </Avatar>
@@ -84,7 +84,7 @@ export const TweetComFoto = () => {
           <ImageContent>
             <img
               className="image"
-              src="https://www.thispersondoesnotexist.com/image"
+              src="https://www.thispersondoesnotexist.com"
               alt="foto"
               height="min(285px, max(175px, 41vw))"
               width="100%"

@@ -29,7 +29,8 @@ const EditProfile = ({ show, onClose }) => {
           <Avatar>
             <img
               className="image"
-              src="https://www.thispersondoesnotexist.com/image"
+              src="https://www.thispersondoesnotexist.com
+              "
               alt="foto"
             />
           </Avatar>
